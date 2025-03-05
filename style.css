@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    }
+    
+    body{
+      background-color: black;
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    .main-conteiner{
+      width:100vw;
+      height: 100vh;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+    }
+    
+    .content{
+      width: 80vw;
+      height: 80vh;
+      margin: 0px auto;
+      background-color:#2F4F4F;
+      margin-top: 10px;
+      display: grid;
+      grid-template-areas:
+        "item1 item1 item1"
+        "item2 item2 item3"
+        "item4 item5 item5";
+      gap: 8px;
+      padding:8px;
+    }
+    
+    .item1{
+      grid-area: item1;
+      background-image: url("https://cdn.pixabay.com/photo/2021/08/19/12/37/hill-6557956_1280.jpg");
+    background-size: cover;
+     background-position: center;
+    }
+    
+    
+    .item2{
+      grid-area: item2;
+      background-image: url("https://cdn.pixabay.com/photo/2021/11/15/18/47/nature-6799071_1280.jpg");
+       background-size: cover;
+      background-position: center;
+    }
+    
+    .item3{
+      grid-area: item3;
+      background-image:url("https://cdn.pixabay.com/photo/2023/02/01/10/37/sunset-7760143_1280.jpg");
+       background-size: cover;
+      background-position: center;
+    }
+    
+    .item4{
+      grid-area: item4;
+      background-image:url("https://cdn.pixabay.com/photo/2022/11/01/13/19/autumn-7562289_1280.jpg");
+       background-size: cover;
+      background-position: center;
+    }
+    
+    .item5{
+      grid-area: item5;
+      background-image:url("https://cdn.pixabay.com/photo/2022/09/04/22/42/meadow-7432891_1280.jpg");
+       background-size: cover;
+      background-position: center;
+      
+    }
+    .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover{
+       filter:  brightness(1) contrast(1.4) ;
+      transition: filter 0.2s ease;
+        transition: transform 0.9s ease;
+      transform: scale(1.1);
+    }
+    
+    
+    
